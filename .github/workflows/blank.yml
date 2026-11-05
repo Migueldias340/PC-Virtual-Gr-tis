@@ -1,4 +1,4 @@
-name: PC Virtual
+PC Virtual
 
 on:
   workflow_dispatch:
