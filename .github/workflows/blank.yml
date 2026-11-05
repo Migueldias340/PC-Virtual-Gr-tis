@@ -1,0 +1,17 @@
+name: PC Virtual
+
+on:
+  workflow_dispatch:
+
+jobs:
+  criar-pc:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+
+    steps:
+      - name: Preparar ambiente
+        run: |
+          sudo apt update
+          sudo apt install -y xfce4 xfce4-terminal
+          echo "Ambiente Linux preparado!"
+          uname -a
